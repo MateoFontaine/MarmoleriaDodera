@@ -1,49 +1,54 @@
-# Astro Starter Kit: Basics
+# Marmolería Dodera
 
+Este es el sitio web oficial de **Marmolería Dodera**, desarrollado con [Astro](https://astro.build/). El sitio permite mostrar los productos y servicios de la marmolería, incluyendo una galería de trabajos y materiales disponibles.
+
+## Tecnologías utilizadas
+
+- **[Astro](https://astro.build/)** - Framework principal del proyecto.
+- **JSON** - Para el almacenamiento de datos.
+
+## Características del proyecto
+
+- **Inicio**: Presentación de la marmolería.
+- **Sobre Nosotros**: Historia y valores de la empresa.
+- **Galería de Trabajos**: Imágenes de proyectos realizados.
+- **Materiales**: Lista de materiales disponibles.
+- **Contacto**: Formulario y datos de contacto.
+- **Integración con Instagram**: Plugin para sincronizar imágenes automáticamente con la galería.
+
+## Instalación y uso
+
+1. Clonar el repositorio:
+   ```sh
+   git clone URL_DEL_REPO
+   cd marmoleria-dodera
+   ```
+2. Instalar dependencias:
+   ```sh
+   npm install
+   ```
+3. Iniciar el entorno de desarrollo:
+   ```sh
+   npm run dev
+   ```
+4. Abrir el navegador en `http://localhost:4321/` (según el puerto configurado en Astro).
+
+## Despliegue
+
+Para subir el sitio a producción, generar los archivos estáticos:
 ```sh
-npm create astro@latest -- --template basics
+npm run build
 ```
+Luego, alojar los archivos en un servidor compatible.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+## Contribución
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Si querés mejorar el proyecto, podés hacer un **fork** y enviar un **pull request**.
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
+## Contacto
 
-## 🚀 Project Structure
+Para consultas o sugerencias, contactanos en **marmoleriadodera@example.com**.
 
-Inside of your Astro project, you'll see the following folders and files:
+---
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# MarmoleriaDodera
+© 2025 Marmolería Dodera. Todos los derechos reservados.
