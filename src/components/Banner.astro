@@ -1,0 +1,31 @@
+---
+
+---
+
+<section>
+    <h1>Hola Mundo</h1>
+</section>
+
+<style>
+    section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-size: cover;
+        box-shadow: inset 0 0 1000px rgba(255, 165, 4, 1); /* Sombra interna naranja */
+        height: 100%;
+        background-image: url("https://hips.hearstapps.com/hmg-prod/images/gettyimages-1660637017.jpg?crop=0.84375xw:1xh;center,top&resize=980:*");
+
+    }
+    section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 165, 0, 0.2); /* Naranja con opacidad 0.5 */
+  z-index: 1; /* Asegura que se ponga encima del fondo */
+}
+</style>

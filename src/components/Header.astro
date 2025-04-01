@@ -2,31 +2,34 @@
 
 ---
 
-<section>
-    <div class="logo">
-        <a href=""><img src="./Logo.png" alt=""></a>
-    </div>
-    <div class="nav">
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Sobre Nosotros</a></li>
-            <li><a href="#">Materiales</a></li>
-            <li><a href="#">Contacto</a></li>
-            <li><a class="galeria" href="#">Galeria</a></li>
-        </ul>
-    </div>
-</section>
-
 <style>
-    /* Header */
-    section{
-        display: flex;
-        justify-content: space-around;
-        align-items: center; 
-        margin-top: 1rem;
-        background-image: url("");
-        font-family: "Open Sans", sans-serif;
-    }
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+.centrado {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 1rem;
+  font-family: "Open Sans", sans-serif;
+  
+  /* Fijar el header al top */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  color: white;
+  padding: 15px 20px;
+  z-index: 1000; /* Asegura que el header se quede arriba de todo */
+
+  /* Fondo transparente para que las imágenes detrás se vean */
+  background-color: rgba(0, 0, 0, 0.103); /* Fondo semi-transparente */
+  backdrop-filter: blur(10px); /* Desenfoque del fondo (opcional) */
+}
 
     /* Navegacion */
     .nav ul{
@@ -40,15 +43,23 @@
     }
     .nav ul li a{
         text-decoration: none;
-        color: black;
-        font-size: 1.3rem;
+        color: white;
+        font-size: 1rem;
+        transition: all 0.5s ease;
     }
     .nav ul li .galeria{
-        padding: 1rem 2rem;
-        background-color: orange; 
+        padding: .5rem 1rem;
+        background-color: #FD9800; 
         border-radius: 1px;
     }
-    
+    .nav ul li .galeria:hover{
+        background-color:#ac6700 ;
+    }
+    .animation:hover{
+        color: #ff8c00 !important; /* Naranja suave */
+        border-bottom: 2px solid #ff8c00; /* Subrayado naranja */
+        transform: translateY(-2px); /* Levantamiento suave */
+    }
 
     /* Logo */
     .logo a img{
@@ -58,3 +69,22 @@
 
 
 </style>
+
+
+<section>
+    <div class="centrado">
+    <div class="logo">
+        <a href=""><img src="./Logo.png" alt=""></a>
+    </div>
+    <div class="nav">
+        <ul>
+            <li><a class="animation" href="#">Inicio</a></li>
+            <li><a class="animation" href="#">Sobre Nosotros</a></li>
+            <li><a class="animation" href="#">Materiales</a></li>
+            <li><a class="animation" href="#">Contacto</a></li>
+            <li><a class="galeria" href="#">Galeria</a></li>
+        </ul>
+    </div>
+    </div>
+</section>
+
